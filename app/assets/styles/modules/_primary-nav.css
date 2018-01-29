@@ -6,32 +6,30 @@
   }
 
   &--pull-right {
-
     @mixin atMedium {
       float: right;
     }
   }
 
   ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     @mixin clearfix;
   }
 
   li {
     list-style: none;
-    padding-right: 7px;
     display: inline-block;
-
+    padding-right: 7px;
     @mixin atMedium {
+      padding-right: 20px;
       float: left;
       display: block;
-      padding: 20px;
     }
   }
-  li:last-child {
-    padding-right: 0px;
 
+  li:last-child {
+    padding-right: 0;
     @mixin atMedium {
       padding-right: 20px;
     }
@@ -39,8 +37,8 @@
 
   a {
     color: #FFF;
-    text-decoration: none;
     font-weight: 300;
+    text-decoration: none;
     display: block;
     padding: 5px 8px;
     font-size: .8rem;
@@ -50,6 +48,10 @@
       font-size: 1rem;
       padding: 12px 0;
       background-color: transparent;
+
+      &.is-current-link {
+        color: #fabb69;
+      }
     }
   }
 }
